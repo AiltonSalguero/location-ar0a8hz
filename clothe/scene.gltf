@@ -1,0 +1,405 @@
+{
+  "accessors": [
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 60773,
+      "max": [
+        32.050247192382812,
+        4.2261490821838379,
+        153.85597229003906
+      ],
+      "min": [
+        -33.673439025878906,
+        -9.896998405456543,
+        89.293281555175781
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 729276,
+      "componentType": 5126,
+      "count": 60773,
+      "max": [
+        0.9999997615814209,
+        0.99999910593032837,
+        0.99587303400039673
+      ],
+      "min": [
+        -0.99999910593032837,
+        -0.99999916553497314,
+        -0.97975140810012817
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 60773,
+      "max": [
+        0.99999779462814331,
+        0.99998265504837036,
+        0.99957466125488281,
+        1
+      ],
+      "min": [
+        -0.99999886751174927,
+        -0.99998629093170166,
+        -0.98447859287261963,
+        1
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 60773,
+      "max": [
+        1.9896670579910278,
+        2.0886068344116211
+      ],
+      "min": [
+        -0.98966699838638306,
+        -1.0223970413208008
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 357432,
+      "max": [
+        60772
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 1458552,
+      "componentType": 5126,
+      "count": 60819,
+      "max": [
+        28.185749053955078,
+        12.159174919128418,
+        153.79486083984375
+      ],
+      "min": [
+        -30.778217315673828,
+        -4.7135181427001953,
+        87.472274780273438
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 2188380,
+      "componentType": 5126,
+      "count": 60819,
+      "max": [
+        0.99999415874481201,
+        0.99998879432678223,
+        0.97111493349075317
+      ],
+      "min": [
+        -0.99998074769973755,
+        -0.99999034404754639,
+        -0.95408564805984497
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 972368,
+      "componentType": 5126,
+      "count": 60819,
+      "max": [
+        0.99999541044235229,
+        0.99998760223388672,
+        0.94742828607559204,
+        1
+      ],
+      "min": [
+        -0.99999922513961792,
+        -0.99980306625366211,
+        -0.97464585304260254,
+        1
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 486184,
+      "componentType": 5126,
+      "count": 60819,
+      "max": [
+        1.9896670579910278,
+        2.0886068344116211
+      ],
+      "min": [
+        -0.98966699838638306,
+        -1.0223970413208008
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 1429728,
+      "componentType": 5125,
+      "count": 357432,
+      "max": [
+        60818
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 2918208,
+      "componentType": 5126,
+      "count": 8466,
+      "max": [
+        20.095584869384766,
+        6.9446549415588379,
+        164.76416015625
+      ],
+      "min": [
+        -21.691370010375977,
+        -3.368720531463623,
+        142.71604919433594
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 3019800,
+      "componentType": 5126,
+      "count": 8466,
+      "max": [
+        1,
+        1,
+        1
+      ],
+      "min": [
+        -1,
+        -1,
+        -1
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "byteOffset": 1945472,
+      "componentType": 5126,
+      "count": 8466,
+      "max": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "min": [
+        -1,
+        -1,
+        -0.99999910593032837,
+        -1
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 972736,
+      "componentType": 5126,
+      "count": 8466,
+      "max": [
+        1,
+        1
+      ],
+      "min": [
+        0,
+        0
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 2859456,
+      "componentType": 5125,
+      "count": 38664,
+      "max": [
+        8465
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "melaamory (https://sketchfab.com/melaamory)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/3d-models/hangers-w-clothes-6df08ef8a8504504911ef520cd870aa8",
+      "title": "Hangers W Clothes"
+    },
+    "generator": "Sketchfab-5.13.0",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 3014112,
+      "byteOffset": 0,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 1040464,
+      "byteOffset": 3014112,
+      "byteStride": 8,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 3121392,
+      "byteOffset": 4054576,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 2080928,
+      "byteOffset": 7175968,
+      "byteStride": 16,
+      "name": "floatBufferViews",
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 9256896,
+      "uri": "scene.bin"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "name": "default",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "metallicFactor": 0,
+        "roughnessFactor": 0.59999999999999998
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 4,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 6,
+            "POSITION": 5,
+            "TANGENT": 7,
+            "TEXCOORD_0": 8
+          },
+          "indices": 9,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 11,
+            "POSITION": 10,
+            "TANGENT": 12,
+            "TEXCOORD_0": 13
+          },
+          "indices": 14,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "name": "RootNode (gltf orientation matrix)",
+      "rotation": [
+        -0.70710678118654746,
+        -0,
+        -0,
+        0.70710678118654757
+      ]
+    },
+    {
+      "children": [
+        2
+      ],
+      "name": "RootNode (model correction matrix)"
+    },
+    {
+      "children": [
+        3,
+        4,
+        5
+      ],
+      "name": "hangers_w_clothes.obj.cleaner.materialmerger.gles"
+    },
+    {
+      "mesh": 0,
+      "name": ""
+    },
+    {
+      "mesh": 1,
+      "name": ""
+    },
+    {
+      "mesh": 2,
+      "name": ""
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "OSG_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ]
+}
+
