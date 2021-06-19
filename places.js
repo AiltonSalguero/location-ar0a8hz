@@ -8,91 +8,143 @@ window.onload = () => {
         let places = staticLoadPlaces();
         renderPlaces(places);
     }
-
-    if (method !== 'static') {
-
-        // first get current user location
-        return navigator.geolocation.getCurrentPosition(function (position) {
-
-            // than use it to load from remote APIs some places nearby
-            dynamicLoadPlaces(position.coords)
-                .then((places) => {
-                    renderPlaces(places);
-                })
-        },
-            (err) => console.error('Error in retrieving position', err),
-            {
-                enableHighAccuracy: true,
-                maximumAge: 0,
-                timeout: 27000,
-            }
-        );
-    }
 };
 
 function staticLoadPlaces() {
     return [
         {
-            name: "Your place name",
-            location: {
-                lat: 0, // add here latitude if using static data
-                lng: 0, // add here longitude if using static data
-            }
+            "id": 1,
+            "name": "Victors Nombre Comercial",
+            "adress": "Av. Agustin Gamarra 140",
+            "latitude": -12.0641762,
+            "longitude": -77.1525624
         },
         {
-            name: 'Another place name',
-            location: {
-                lat: 0,
-                lng: 0,
-            }
+            "id": 2,
+            "name": "Kayser",
+            "adress": "Av Agustin Gamarra 650",
+            "latitude": -12.0665232,
+            "longitude": -77.01325109999999
+        },
+        {
+            "id": 3,
+            "name": "Mya Line",
+            "adress": "Av. Agustin Gamarra 1103",
+            "latitude": -12.0695634,
+            "longitude": -77.0128069
+        },
+        {
+            "id": 4,
+            "name": "Mya Line",
+            "adress": "Av Agustin Gamarra 1105",
+            "latitude": -12.0694625,
+            "longitude": -77.0127509
+        },
+        {
+            "id": 5,
+            "name": "Pioner",
+            "adress": "Av Agustin Gamarra 445",
+            "latitude": -12.0652889,
+            "longitude": -77.154501
+        },
+        {
+            "id": 6,
+            "name": "Bata",
+            "adress": "Av. Agustin Gamarra 1017",
+            "latitude": -12.0684229,
+            "longitude": -77.0128529
+        },
+        {
+            "id": 7,
+            "name": "Kayser",
+            "adress": "Av. La Mar 2225 - San Miguel",
+            "latitude": -12.0750562,
+            "longitude": -77.08071819999999
+        },
+        {
+            "id": 8,
+            "name": "Bata",
+            "adress": "Av. La Marina 2000, San Miguel",
+            "latitude": -12.0761542,
+            "longitude": -77.083643
+        },
+        {
+            "id": 9,
+            "name": "Bata",
+            "adress": "Jiron Jose Galvez 522 - B",
+            "latitude": -12.0903509,
+            "longitude": -77.07283799999999
+        },
+        {
+            "id": 10,
+            "name": "Bata",
+            "adress": "Av. La Mar 2275, San Miguel",
+            "latitude": -12.0749941,
+            "longitude": -77.08168979999999
+        },
+        {
+            "id": 11,
+            "name": "Victors Nombre Comercial",
+            "adress": "Av. Las Carmelias 234",
+            "latitude": -12.0931147,
+            "longitude": -77.0293717
+        },
+        {
+            "id": 12,
+            "name": "Angelas Flowers",
+            "adress": "Av. Las Carmelias 234",
+            "latitude": -12.0931147,
+            "longitude": -77.0293717
+        },
+        {
+            "id": 13,
+            "name": "Victors Nombre Comercial",
+            "adress": "Av. Las Carmelias 234",
+            "latitude": -12.0931147,
+            "longitude": -77.0293717
+        },
+        {
+            "id": 14,
+            "name": "Victors Nombre Comercial",
+            "adress": "Av. Las Carmelias 234",
+            "latitude": -12.0931147,
+            "longitude": -77.0293717
+        },
+        {
+            "id": 15,
+            "name": "Angelas Flowers",
+            "adress": "Av. Las Carmelias 234",
+            "latitude": -12.0931147,
+            "longitude": -77.0293717
+        },
+        {
+            "id": 16,
+            "name": "Develogers",
+            "adress": "Av Wiesse",
+            "latitude": -11.9654429,
+            "longitude": -76.9942375
+        },
+        {
+            "id": 17,
+            "name": "Abraham Store",
+            "adress": "Av. Universitaria",
+            "latitude": -12.0751071,
+            "longitude": -77.0803832
         }
     ];
 }
-
-// getting places from REST APIs
-function dynamicLoadPlaces(position) {
-    let params = {
-        radius: 300,    // search places not farther than this value (in meters)
-        clientId: 'HZIJGI4COHQ4AI45QXKCDFJWFJ1SFHYDFCCWKPIJDWHLVQVZ',   // add your credentials here
-        clientSecret: '',   // add your credentials here
-        version: '20300101',    // foursquare versioning, required but unuseful for this demo
-    };
-
-    // CORS Proxy to avoid CORS problems
-    let corsProxy = 'https://cors-anywhere.herokuapp.com/';
-
-    // Foursquare API
-    let endpoint = `${corsProxy}https://api.foursquare.com/v2/venues/search?intent=checkin
-        &ll=${position.latitude},${position.longitude}
-        &radius=${params.radius}
-        &client_id=${params.clientId}
-        &client_secret=${params.clientSecret}
-        &limit=15
-        &v=${params.version}`;
-    return fetch(endpoint)
-        .then((res) => {
-            return res.json()
-                .then((resp) => {
-                    return resp.response.venues;
-                })
-        })
-        .catch((err) => {
-            console.error('Error with places API', err);
-        })
-};
-
 function renderPlaces(places) {
     let scene = document.querySelector('a-scene');
 
     places.forEach((place) => {
-        const latitude = place.location.lat;
-        const longitude = place.location.lng;
+        const latitude = place.latitude;
+        const longitude = place.longitude;
 
         // add place icon
         const icon = document.createElement('a-image');
         icon.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude}`);
         icon.setAttribute('name', place.name);
-        icon.setAttribute('src', '../assets/map-marker.png');
+        icon.setAttribute('src', './map-marker.png');
 
         // for debug purposes, just show in a bigger scale, otherwise I have to personally go on places...
         icon.setAttribute('scale', '20, 20');
