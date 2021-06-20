@@ -12,7 +12,7 @@ window.onload = () => {
 
 function staticLoadPlaces() {
     return [
-        {
+        /*{
             "id": 1,
             "name": "Victors Nombre Comercial",
             "adress": "Av. Agustin Gamarra 140",
@@ -103,6 +103,7 @@ function staticLoadPlaces() {
             "latitude": -12.0931147,
             "longitude": -77.0293717
         },
+        
         {
             "id": 14,
             "name": "Victors Nombre Comercial",
@@ -117,6 +118,7 @@ function staticLoadPlaces() {
             "latitude": -12.0931147,
             "longitude": -77.0293717
         },
+        */
         {
             "id": 16,
             "name": "Develogers",
