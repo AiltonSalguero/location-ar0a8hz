@@ -132,7 +132,34 @@ function staticLoadPlaces() {
             "adress": "Av. Universitaria",
             "latitude": -12.0751071,
             "longitude": -77.0803832
-        }
+        },{
+            "id": 7,
+            "name": "Kayser",
+            "adress": "Av. La Mar 2225 - San Miguel",
+            "latitude": -12.0750562,
+            "longitude": -77.08071819999999
+        },
+        {
+            "id": 8,
+            "name": "Bata",
+            "adress": "Av. La Marina 2000, San Miguel",
+            "latitude": -12.0761542,
+            "longitude": -77.083643
+        },
+        {
+            "id": 9,
+            "name": "Bata",
+            "adress": "Jiron Jose Galvez 522 - B",
+            "latitude": -12.0903509,
+            "longitude": -77.07283799999999
+        },
+        {
+            "id": 10,
+            "name": "Bata2",
+            "adress": "Av. La Mar 2275, San Miguel",
+            "latitude": -12.0749941,
+            "longitude": -77.08168979999999
+        },
     ];
 }
 function renderPlaces(places) {
