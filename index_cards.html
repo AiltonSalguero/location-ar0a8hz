@@ -8,6 +8,12 @@
   <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
   <script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"></script>
   <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
+  <script>AFRAME.registerComponent("foo", {
+    init: function () {
+        this.el.addEventListener("click", (e) => { console.log("HELLO");window.location.href = "https://www.bata.pe";
+})
+    }
+})</script>
 </head>
 
 <body style="margin: 0; overflow: hidden;">
@@ -24,7 +30,7 @@
       <a-image id="logo" src="#my-image" look-at="[gps-camera]" scale="0.8 0.8 0.8" position="-0.8 -0.15 -10"></a-image>
       <a-camera gps-camera rotation-reader> </a-camera>
     </a-entity>-->
-    <a-entity id="point_card_1" gps-entity-place="latitude: -12.0751071; longitude: -77.0803832;">
+    <a-entity id="point_card_1" gps-entity-place="latitude: -12.0751071; longitude: -77.0803832;" foo>
       <a-plane id="background" color="#921ace" look-at="[gps-camera]" height="1.2" width="3.6" position="0 -0.5 -12">
       </a-plane>
       <a-text id="name" value="Abraham Store" look-at="[gps-camera]" scale="1 1 1" position="-0.4 0.1 -10"></a-text>
@@ -36,7 +42,7 @@
       <a-camera gps-camera rotation-reader> </a-camera>
     </a-entity>
 
-    <a-entity id="point_card_2">
+    <a-entity id="point_card_2" foo>
       <a-plane id="background" color="#921ace" look-at="[gps-camera]" height="1.2" width="3.6" position="0 -0.5 -12"
         gps-entity-place="latitude: -12.0749941; longitude: -77.08168979;">
       </a-plane>

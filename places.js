@@ -183,7 +183,7 @@ function renderPlaces(places) {
         const clickListener = function (ev) {
             ev.stopPropagation();
             ev.preventDefault();
-
+            console.log('clicked')
             const name = ev.target.getAttribute('name');
 
             const el = ev.detail.intersection && ev.detail.intersection.object.el;
