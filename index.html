@@ -2,36 +2,90 @@
 <html>
 
 <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Gamarra AR</title>
-    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
-    <script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"></script>
-    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
-    <script>AFRAME.registerComponent("foo", {
-            init: function () {
-                this.el.addEventListener("click", (e) => { console.log("HELLO");window.location.href = "http://stackoverflow.com";
- })
-            }
-        })</script>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Gamarra AR</title>
+  <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  <script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"></script>
+  <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
+  <script>AFRAME.registerComponent("foo", {
+    init: function () {
+        this.el.addEventListener("click", (e) => { console.log("HELLO");window.location.href = "https://www.bata.pe";
+})
+    }
+})</script>
 </head>
 
 <body style="margin: 0; overflow: hidden;">
-    <a-scene vr-mode-ui="enabled: false" cursor="rayOrigin: mouse" renderer='antialias: true; alpha:true'
-        arjs='videoTexture: true; sourceType: webcam; debugUIEnabled: false'>
-        <a-camera id='camera1' near="0.1" far="50000" fov="80"
-            gps-camera='simulateLatitude: 51.049; simulateLongitude: -0.7171' rotation-reader vertical-controls
-            wasd-controls="acceleration: 1300">
-        </a-camera>
+  <a-scene>
+    <a-assets>
+      <img id="my-image" src="./store.png" crossOrigin="anonymous">
+    </a-assets>
+    <!--<a-entity id="point_card" gps-entity-place="latitude: -11.9654429; longitude: -76.9942375;">
+      <a-plane id="background" color="#921ace" look-at="[gps-camera]" height="1" width="3" position="0 -0.5 -12"></a-plane>
+      </a-plane>
+      <a-text id="name" value="Ailton Store" look-at="[gps-camera]" scale="1 1 1" position="-0.38 0 -10"></a-text>
+      <a-text id="adress" value="Av. Gamarra 143" look-at="[gps-camera]" scale="0.6 0.6 0.6" position="-0.38 -0.2 -10">
+      </a-text>
+      <a-image id="logo" src="#my-image" look-at="[gps-camera]" scale="0.8 0.8 0.8" position="-0.8 -0.15 -10"></a-image>
+      <a-camera gps-camera rotation-reader> </a-camera>
+    </a-entity>-->
+    <a-entity id="point_card_1" gps-entity-place="latitude: -12.0751071; longitude: -77.0803832;" foo>
+      <a-plane id="background" color="#921ace" look-at="[gps-camera]" height="1.2" width="3.6" position="0 -0.5 -12">
+      </a-plane>
+      <a-text id="name" value="Abraham Store" look-at="[gps-camera]" scale="1 1 1" position="-0.4 0.1 -10"></a-text>
+      <a-text id="adress" value="Av La Mar 2223" look-at="[gps-camera]" scale="0.6 0.6 0.6" position="-0.4 -0.2 -10">
+      </a-text>
+      <a-text id="interior" value="Interior 1" look-at="[gps-camera]" scale="0.6 0.6 0.6" position="-0.4 -0.4 -10">
+      </a-text>
+      <a-image id="logo" src="#my-image" look-at="[gps-camera]" scale="1 1 1" position="-1 -0.15 -10"></a-image>
+      <a-camera gps-camera rotation-reader> </a-camera>
+    </a-entity>
 
-        <!-- This is perhaps 1.5 kilometres from the starting point.
-             With videoTexture: false it does not appear.
-             With videoTexture: true, it does. -->
-        <a-box click="function console(){console.log('clicked')}"
-            gps-entity-place='latitude: 51.0597; longitude: -0.7171' material='color: yellow' position='0 90 0'
-            scale='100 100 100' foo>
-        </a-box>
-    </a-scene>
+    <a-entity id="point_card_2" foo>
+      <a-plane id="background" color="#921ace" look-at="[gps-camera]" height="1.2" width="3.6" position="0 -0.5 -12"
+        gps-entity-place="latitude: -12.0749941; longitude: -77.08168979;">
+      </a-plane>
+      <a-text id="name" value="Bata" look-at="[gps-camera]" scale="1 1 1" position="-0.4 0.1 -10"
+        gps-entity-place="latitude: -12.0749941; longitude: -77.08168979;"></a-text>
+      <a-text id="adress" value="Av. La Mar 2275, San Miguel" look-at="[gps-camera]" scale="0.6 0.6 0.6"
+        position="-0.4 -0.2 -10" gps-entity-place="latitude: -12.0749941; longitude: -77.08168979;">
+      </a-text>
+      <a-text id="interior" value="Interior 1" look-at="[gps-camera]" scale="0.6 0.6 0.6" position="-0.4 -0.4 -10"
+        gps-entity-place="latitude: -12.0749941; longitude: -77.08168979;">
+      </a-text>
+      <a-image id="logo" src="#my-image" look-at="[gps-camera]" scale="1 1 1" position="-1 -0.15 -10"></a-image
+        gps-entity-place="latitude: -12.0749941; longitude: -77.08168979;">
+      <a-camera gps-camera rotation-reader> </a-camera>
+    </a-entity>
+    <!--
+    <a-entity id="point_card_3" gps-entity-place="latitude: -12.0750562; longitude: -77.08071819;">
+      <a-plane id="background" color="#921ace" look-at="[gps-camera]" height="1.2" width="3.6" position="0 -0.5 -12">
+      </a-plane>
+      <a-text id="name" value="Kayser" look-at="[gps-camera]" scale="1 1 1" position="-0.4 0.1 -10"></a-text>
+      <a-text id="adress" value="Av. La Mar 2225 - San Miguel" look-at="[gps-camera]" scale="0.6 0.6 0.6"
+        position="-0.4 -0.2 -10">
+      </a-text>
+      <a-text id="interior" value="Interior 1" look-at="[gps-camera]" scale="0.6 0.6 0.6" position="-0.4 -0.4 -10">
+      </a-text>
+      <a-image id="logo" src="#my-image" look-at="[gps-camera]" scale="1 1 1" position="-1 -0.15 -10"></a-image>
+      <a-camera gps-camera rotation-reader> </a-camera>
+    </a-entity>
+
+    <a-entity id="point_card_4" gps-entity-place="latitude: -12.0761542; longitude: -77.083643;">
+      <a-plane id="background" color="#921ace" look-at="[gps-camera]" height="1.2" width="3.6" position="0 -0.5 -12">
+      </a-plane>
+      <a-text id="name" value="Bata" look-at="[gps-camera]" scale="1 1 1" position="-0.4 0.1 -10"></a-text>
+      <a-text id="adress" value="Av. La Marina 2000, San Miguel" look-at="[gps-camera]" scale="0.6 0.6 0.6"
+        position="-0.4 -0.2 -10">
+      </a-text>
+      <a-text id="interior" value="Interior 1" look-at="[gps-camera]" scale="0.6 0.6 0.6" position="-0.4 -0.4 -10">
+      </a-text>
+      <a-image id="logo" src="#my-image" look-at="[gps-camera]" scale="1 1 1" position="-1 -0.15 -10"></a-image>
+      <a-camera gps-camera rotation-reader> </a-camera>
+    </a-entity>
+    -->
+  </a-scene>
 </body>
 
 </html>
